@@ -5,7 +5,7 @@ from keyboards.reply import kb_menu, get_kb_menu, get_back
 
 
 async def cmd_start(message: types.Message):
-    with open('/Users/artem/Desktop/glavhaya.jpg', 'rb') as photo:
+    with open('../media/glavhaya.jpg', 'rb') as photo:
         await bot.send_photo(chat_id=message.from_user.id,
                              photo=photo,
                              caption=f'<b> Добро пожаловать, {message.from_user.full_name}!\n </b>'

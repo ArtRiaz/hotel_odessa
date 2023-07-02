@@ -15,7 +15,7 @@ import calendar
 
 
 async def panorama_room(message: types.Message):
-    with open('/Users/artem/Desktop/hotel_panorama.jpg', 'rb') as photo:
+    with open('../media/hotel_panorama.jpg', 'rb') as photo:
         await bot.send_photo(chat_id=message.from_user.id,
                              photo=photo,
                              caption=f'Если вы {message.from_user.first_name} еще не ощущали настоящий изыск, то это '
@@ -26,7 +26,7 @@ async def panorama_room(message: types.Message):
 
 
 async def panorama_detale(call: CallbackQuery):
-    with open('/Users/artem/Desktop/panorama1.jpg', 'rb') as photo1:
+    with open('../media/panorama1.jpg', 'rb') as photo1:
         await call.bot.send_photo(chat_id=call.from_user.id,
                                   photo=photo1,
                                   caption=f'<b>Концепция номера H2</b>'
@@ -38,7 +38,7 @@ async def panorama_detale(call: CallbackQuery):
                                           f'из лучших роскошных отелей в южной столице. ', reply_markup=get_kb_menu()
                                   )
 
-    with open('/Users/artem/Desktop/panorama2.jpg', 'rb') as photo2:
+    with open('../media/panorama2.jpg', 'rb') as photo2:
         await call.bot.send_photo(chat_id=call.from_user.id,
                                   photo=photo2,
                                   caption=
@@ -47,7 +47,7 @@ async def panorama_detale(call: CallbackQuery):
                                   f'достопримечательностей города и оживленного района Аркадия, Sfumato является одним '
                                   f'из лучших роскошных отелей в южной столице.')
 
-    with open('/Users/artem/Desktop/panorama3.jpg', 'rb') as photo3:
+    with open('../media/panorama3.jpg', 'rb') as photo3:
         await call.bot.send_photo(chat_id=call.from_user.id,
                                   photo=photo3,
                                   caption=

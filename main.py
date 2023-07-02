@@ -1,7 +1,7 @@
-from aiogram import types, executor
 from create_bot import dp, bot
 from handlers import start, our_company, back_menu, contact, room, support
 from utils.set_command_default import set_commands
+from aiogram import types, executor
 
 async def on_startup(_):
     print("Бот запущен")
